@@ -88,3 +88,85 @@ nav a{
     line-height:1.8;
     margin-bottom:35px;
 }
+
+.timeline{
+    padding: 80px 100px;
+}
+
+.timeline h2{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 70px;
+}
+
+.timeline-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.timeline-text{
+    flex: 1;
+}
+
+.timeline-text h3{
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.timeline-text p{
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.timeline-image{
+    flex: 1;
+}
+
+.timeline-image img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.umkm{
+    padding:80px 0;
+}
+
+.umkm h2{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 70px;
+}
+
+.umkm-background{
+    position: relative;
+    background-image: url("gambar/Screenshot 2026-07-13 220450.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 650px;
+}
+
+.umkm-card{
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    width: 450px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
+
+.umkm-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding: 20px;
+}
