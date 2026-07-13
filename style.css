@@ -360,3 +360,97 @@ nav a{
     border-radius: 12px;
     font-weight: 600;
 }
+
+.shop-hero{
+
+    height:400px;
+
+    background-image:url(gambar/9e9b479bda59f7c9b54ecf43859e170b.jpg);
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding-left:60px;
+
+}
+
+.category{
+
+    display:flex;
+
+    gap:20px;
+
+    padding:40px 60px;
+
+}
+
+.product-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    padding:0 60px 60px;
+
+}
+
+.product-card{
+
+    text-align:center;
+
+}
+
+.product-card img{
+
+    width:100%;
+
+    border-radius:10px;
+
+}
+
+.product-card h4{
+
+    margin-top:10px;
+
+}
+
+.product-card p{
+
+    font-weight:bold;
+
+}
+
+.header-store{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    background: transparent;
+
+    z-index: 100;
+}
