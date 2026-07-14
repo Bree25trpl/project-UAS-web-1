@@ -26,27 +26,30 @@
 }
 
 .overlay{
-    position: absolute;
-    inset: 0;
-
-    background: rgba(0,0,0,.45);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* rata kiri */
 
-    color: white;
-    text-align: center;
+    background: rgba(0,0,0,.45);
+    padding-left: 80px;
+
+    text-align: left;
+
+    height: 100%;
 }
+
 
 .overlay h1{
     font-size: 64px;
     margin-bottom: 20px;
+    text-align: left;
+    color: white;
 }
 
 .overlay p{
     font-size: 22px;
+    color: white;
 }
 
 
