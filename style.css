@@ -22,9 +22,16 @@ body{
     background: rgb(0, 0, 0, 0.45);
 }
 nav{
+    width: 90%;
+    max-width: 1300px;
+    height: 85px;
+
+    margin: auto;
+
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+
     position: relative;
     z-index: 1;
 }
@@ -45,28 +52,23 @@ nav{
 nav ul{
     display: flex;
     list-style: none;
-    gap: 30px;
-    margin-right: 30px;
-    margin-left: 80px;
+    gap: 35px;
 }
 
 nav a{
     text-decoration: none;
-    color: black;
-    font-weight: bold;
     color: white;
-    margin-left: 30px;
+    font-weight: 500;
 }
 
 .nav-a-rekomendasi{
     text-decoration: none;
-    color: black;
-    font-weight: bold;
     color: white;
+    font-weight: 500;
     background-color: rgb(108, 65, 34);
-    margin-left: 180px;
-    padding: 10px 15px;
+    padding: 10px 18px;
     border-radius: 10px;
+    margin-left: 20px;
 }
 
 .hero{
@@ -288,6 +290,18 @@ nav a{
 .search-bar p{
     color: #8b8b8b;
     font-size: 18px;
+}
+
+.header-store a{
+    color: black;
+}
+
+.header-store .logo{
+    color: black;
+}
+
+.header-store .nav-a-rekomendasi{
+    color: white;
 }
 
 .store-list{
@@ -519,25 +533,70 @@ nav a{
     flex: 1;
 }
 
-.product-specification{
-    margin-top: 80px;
-}
-
-.product-specification h2{
-    margin-top: 200px;
-    margin-bottom: 60px;
-    text-align: center;
-}
-
-.product-specification table{
+.detail-header {
     width: 100%;
-    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.product-specification th,
-.product-specification td{
-    border-bottom: 1px solid #ccc;
-    padding: 15px;
-    text-align: left;
+.detail-nav {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    height: 85px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.detail-nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.detail-nav .logo img {
+    width: 60px;
+}
+
+.detail-nav .logo h2 {
+    font-size: 22px;
+    color: #5A3622;
+}
+
+.detail-nav ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.detail-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.detail-nav ul li a:hover {
+    color: #8B5E3C;
+}
+
+.detail-page{
+    width: 90%;
+    max-width: 1300px;
+    margin: 50px auto;
+}
+
+.product-detail{
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.product-info{
+    flex: 1;
+}

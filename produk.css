@@ -1,0 +1,225 @@
+/* ============================
+   DETAIL HEADER
+============================ */
+
+.detail-header{
+    width: 100%;
+
+    background: white;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* ============================
+   DETAIL PAGE
+============================ */
+
+.detail-page{
+    width: 90%;
+    max-width: 1300px;
+
+    margin: 50px auto;
+}
+
+
+/* ============================
+   PRODUCT DETAIL
+============================ */
+
+.product-detail{
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 60px;
+}
+
+
+/* ============================
+   PRODUCT IMAGE
+============================ */
+
+.product-image{
+    display: flex;
+    flex: 1;
+}
+
+.product-image img{
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 12px;
+}
+
+
+/* ============================
+   PRODUCT INFORMATION
+============================ */
+
+.product-info{
+    flex: 1;
+}
+
+.product-info h1{
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.rating{
+    color: #777;
+
+    margin-bottom: 20px;
+}
+
+.rating span{
+    margin-left: 10px;
+}
+
+.price{
+    font-size: 32px;
+    font-weight: bold;
+
+    color: #6B4F3A;
+
+    margin-bottom: 30px;
+}
+
+
+/* ============================
+   PURCHASE BOX
+============================ */
+
+.purchase-box{
+    border: 1px solid #d9d9d9;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+.purchase-box h2{
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ============================
+   QUANTITY
+============================ */
+
+.quantity{
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.quantity button{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 8px;
+
+    background: #f3f3f3;
+
+    font-size: 20px;
+}
+
+.quantity span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quantity button,
+.button-group button{
+    border: none;
+    cursor: pointer;
+}
+
+/* ============================
+   BUTTON GROUP
+============================ */
+
+.button-group{
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.button-group button{
+    flex: 1;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button-group button:first-child{
+    background: white;
+
+    border: 2px solid #6B4F3A;
+
+    color: #6B4F3A;
+}
+
+.button-group button:last-child{
+    background: #6B4F3A;
+
+    color: white;
+}
+
+
+/* ============================
+   PRODUCT SPECIFICATION
+============================ */
+
+.product-specification{
+    margin-top: 80px;
+}
+
+.product-specification h2{
+    text-align: center;
+
+    font-size: 36px;
+
+    margin-bottom: 50px;
+}
+
+.product-specification table{
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.product-specification th,
+.product-specification td{
+    padding: 18px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.product-specification th{
+    width: 220px;
+
+    background: #f7f7f7;
+}

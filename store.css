@@ -1,0 +1,129 @@
+/* ============================
+   HEADER
+============================ */
+
+.header-store{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/* ============================
+   HERO
+============================ */
+
+.shop-hero{
+    height: 650px;
+
+    background-image: url("gambar/9e9b479bda59f7c9b54ecf43859e170b.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.45);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.overlay h1{
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.overlay p{
+    font-size: 22px;
+}
+
+
+/* ============================
+   CATEGORY
+============================ */
+
+.category-section{
+    padding: 50px 0;
+}
+
+.category-list{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.category{
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.category.active{
+    color: #8B5E3C;
+    border-bottom: 2px solid #8B5E3C;
+}
+
+
+/* ============================
+   PRODUCT
+============================ */
+
+.product-list{
+    width: 90%;
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 30px;
+
+    padding-bottom: 80px;
+}
+
+.product-card{
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+
+    transition: .3s;
+}
+
+.product-card:hover{
+    transform: translateY(-5px);
+}
+
+.product-card img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.product-card h4{
+    font-size: 22px;
+    margin: 18px;
+}
+
+.product-card p{
+    margin: 0 18px 18px;
+    color: #8B5E3C;
+    font-weight: bold;
+}

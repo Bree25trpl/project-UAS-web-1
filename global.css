@@ -1,0 +1,193 @@
+/* ============================
+   GOOGLE FONT & RESET
+============================ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ============================
+   NAVBAR
+============================ */
+
+nav{
+    width: 90%;
+    max-width: 1300px;
+    height: 85px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* ============================
+   LOGO
+============================ */
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.logo h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+/* ============================
+   NAVIGATION MENU
+============================ */
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+
+/* ============================
+   RECOMMENDATION BUTTON
+============================ */
+
+.nav-a-rekomendasi{
+    background-color: rgb(108, 65, 34);
+    color: white !important;
+
+    padding: 10px 18px;
+
+    border-radius: 10px;
+}
+
+
+/* ============================
+   HEADER VARIATIONS
+============================ */
+
+/* HOME */
+
+.header-home .logo{
+    color: white;
+}
+
+.header-home a{
+    color: white;
+}
+
+
+/* STORE */
+
+.header-store .logo{
+    color: black;
+}
+
+.header-store a{
+    color: black;
+}
+
+.header-store .nav-a-rekomendasi{
+    color: white;
+}
+
+
+/* DETAIL */
+
+.detail-header .logo{
+    color: #5A3622;
+}
+
+.detail-header a{
+    color: #333;
+}
+
+.detail-header .nav-a-rekomendasi{
+    color: white;
+}
+
+
+.header-store .logo h2{
+    color: white;
+}
+
+.header-store nav a{
+    color: white;
+}
+
+.header-store .nav-a-rekomendasi{
+    background: #8B5E3C;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+/* ============================
+   BUTTON
+============================ */
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+
+/* ============================
+   IMAGE
+============================ */
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ============================
+   LINK
+============================ */
+
+a{
+    transition: .3s;
+}
+
+
+/* ============================
+   SECTION CONTAINER
+============================ */
+
+.container{
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
