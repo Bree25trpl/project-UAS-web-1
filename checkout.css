@@ -1,0 +1,237 @@
+/* ===================== CHECKOUT ===================== */
+
+.checkout {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+
+    align-items: start;
+}
+
+.checkout-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===================== CARD ===================== */
+
+.order-card,
+.customer-card,
+.shipping-card,
+.payment-card,
+.summary-card {
+    background: #fff;
+    border: 1px solid #bca898;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* ===================== JUDUL ===================== */
+
+.card-title h3,
+.customer-card h3,
+.shipping-card h3,
+.payment-card h3,
+.summary-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.card-title p {
+    font-size: 12px;
+    color: #777;
+}
+
+/* ===================== PRODUK ===================== */
+
+.product {
+    display: flex;
+    gap: 18px;
+    margin: 20px 0;
+}
+
+.product-image img {
+    width: 120px;
+    border-radius: 8px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h4 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.product-info p {
+    color: #777;
+    font-size: 14px;
+}
+
+.price-qty {
+    margin-top: 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 600;
+}
+
+.price-qty span:last-child {
+    font-size: 18px;
+}
+
+/* ===================== TOTAL ===================== */
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.order-total strong {
+    font-size: 22px;
+}
+
+/* ===================== CUSTOMER ===================== */
+
+.customer-info {
+    margin-top: 15px;
+}
+
+.customer-info h4 {
+    margin-bottom: 10px;
+}
+
+.customer-info p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* ===================== SHIPPING ===================== */
+
+.shipping-card p,
+.payment-card p {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    color: #666;
+}
+
+.shipping-card label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* ===================== PAYMENT ===================== */
+
+.payment-list {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.payment-list button {
+    flex: 1;
+
+    padding: 10px;
+
+    background: white;
+    border: 1px solid #bca898;
+    border-radius: 8px;
+
+    transition: .3s;
+}
+
+.payment-list button:hover {
+    background: #f6f2ef;
+}
+
+/* ===================== SUMMARY ===================== */
+
+.summary-card {
+    position: sticky;
+    top: 20px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.summary-card hr {
+    margin: 18px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ===================== BUTTON ===================== */
+
+.btn-bayar {
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #6d4c3d;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.btn-bayar:hover {
+    background: #593d31;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 900px) {
+
+    .checkout {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-card {
+        position: static;
+    }
+
+    .payment-list {
+        flex-direction: column;
+    }
+
+    .product {
+        flex-direction: column;
+    }
+
+    .product-image img {
+        width: 100%;
+    }
+
+}
