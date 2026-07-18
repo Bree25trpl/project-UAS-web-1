@@ -104,6 +104,10 @@
     border-radius: 15px;
 }
 
+.hidden{
+    display: none;
+}
+
 
 /* ============================
    UMKM
