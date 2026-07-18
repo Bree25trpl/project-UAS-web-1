@@ -18,7 +18,7 @@ body{
 ============================ */
 
 nav{
-    width: 90%;
+    width: 100%;
     max-width: 1300px;
     height: 85px;
 
@@ -32,7 +32,18 @@ nav{
     z-index: 10;
 }
 
-
+nav:hover{
+    background-color: rgb(255, 255, 255);
+    h2{
+        color: rgb(0, 0, 0);
+    }
+    .nav-a-sejarah-kita{
+        color: rgb(0, 0, 0);
+    }
+    .nav-a-shopping{
+        color: rgb(0, 0, 0);
+    }
+}
 /* ============================
    LOGO
 ============================ */
@@ -44,6 +55,7 @@ nav{
 }
 
 .logo img{
+    margin-left: 60px;
     width: 60px;
     height: 60px;
 }
@@ -70,18 +82,32 @@ nav ul li{
 }
 
 nav a{
+    color: #000000;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     transition: .3s;
 }
 
-
 /* ============================
-   RECOMMENDATION BUTTON
+   SEJARAH KITA, SHOPPING, and RECOMMENDATION BUTTON
 ============================ */
+.nav-a-sejarah-kita{
+    border-bottom: #33333300;
+}
+ .nav-a-sejarah-kita:hover{
+    border-bottom: 2px solid rgb(0, 114, 167);
+}
+
+.nav-a-shopping{
+    border-bottom: #33333300;
+}
+ .nav-a-shopping:hover{
+    border-bottom: 2px solid rgb(0, 114, 167);
+}
 
 .nav-a-rekomendasi{
+    margin-right: 60px;
     background-color: rgb(108, 65, 34);
     color: white !important;
 
@@ -90,6 +116,9 @@ nav a{
     border-radius: 10px;
 }
 
+.nav-a-rekomendasi:hover{
+    background-color: rgb(151, 93, 46);
+}
 
 /* ============================
    HEADER VARIATIONS
