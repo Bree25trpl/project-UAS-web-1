@@ -21,16 +21,16 @@ nav{
     width: 100%;
     max-width: 1300px;
     height: 85px;
-
+    color: #ffffff;
     margin: auto;
-
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     position: relative;
     z-index: 10;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 nav:hover{
@@ -56,7 +56,6 @@ nav:hover{
 }
 
 .logo img{
-    margin-left: 60px;
     width: 60px;
     height: 60px;
 }
@@ -64,6 +63,8 @@ nav:hover{
 .logo h2{
     font-size: 22px;
     font-weight: 600;
+    color: #ffffff;
+    transition: 0.3s;
 }
 
 
@@ -90,25 +91,24 @@ nav a{
     transition: .3s;
 }
 
-/* ============================
+/* ====================================================
    SEJARAH KITA, SHOPPING, and RECOMMENDATION BUTTON
-============================ */
+==================================================== */
 .nav-a-sejarah-kita{
     border-bottom: #33333300;
 }
- .nav-a-sejarah-kita:hover{
+.nav-a-sejarah-kita:hover{
     border-bottom: 2px solid rgb(0, 114, 167);
 }
 
 .nav-a-shopping{
     border-bottom: #33333300;
 }
- .nav-a-shopping:hover{
+.nav-a-shopping:hover{
     border-bottom: 2px solid rgb(0, 114, 167);
 }
 
 .nav-a-rekomendasi{
-    margin-right: 60px;
     background-color: rgb(108, 65, 34);
     color: white !important;
 
@@ -139,11 +139,15 @@ nav a{
 /* STORE */
 
 .header-store .logo{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
-.header-store a{
-    color: black;
+.header-store .nav-a-sejarah-kita{
+    color: rgb(255, 255, 255);
+}
+
+.header-store .nav-a-shopping{
+    color: rgb(255, 255, 255);
 }
 
 .header-store .nav-a-rekomendasi{
@@ -153,7 +157,7 @@ nav a{
 
 /* DETAIL */
 
-.detail-header .logo{
+.detail-header .logo h2{
     color: #5A3622;
 }
 
@@ -162,24 +166,15 @@ nav a{
 }
 
 .detail-header .nav-a-rekomendasi{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-
-.header-store .logo h2{
-    color: white;
-}
 
 .header-store nav a{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-.header-store .nav-a-rekomendasi{
-    background: #8B5E3C;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-}
+
 
 /* ============================
    BUTTON
