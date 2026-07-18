@@ -108,7 +108,12 @@
     font-size: 18px;
 }
 
-
+input[type="text"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
 /* ============================
    STORE LIST
 ============================ */
