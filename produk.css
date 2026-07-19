@@ -259,3 +259,13 @@ input[type="number"]{
 
     background: #f7f7f7;
 }
+
+@media (max-width: 900px){
+    .product-detail{
+        flex-direction: column;
+    }
+
+    .product-image img{
+        max-width: 100%;
+    }
+}

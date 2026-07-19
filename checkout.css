@@ -161,7 +161,8 @@
 
 .summary-card {
     position: sticky;
-    top: 20px;
+
+    top: 125px;
 }
 
 .summary-row {
@@ -210,6 +211,10 @@
     background: #593d31;
 }
 
+.btn-bayar:active {
+    background: #7A563E;
+    color: white;
+}
 /* ===================== RESPONSIVE ===================== */
 
 @media (max-width: 900px) {
@@ -234,4 +239,30 @@
         width: 100%;
     }
 
+}
+
+/* Desktop */
+.card {
+    width: 400px;
+}
+
+/* Laptop */
+@media (max-width:1200px) {
+    .card {
+        width: 350px;
+    }
+}
+
+/* Tablet */
+@media (max-width:992px) {
+    .card {
+        width: 300px;
+    }
+}
+
+/* HP */
+@media (max-width:768px) {
+    .card {
+        width: 100%;
+    }
 }

@@ -72,12 +72,21 @@
     margin-bottom: 70px;
 }
 
+.timeline-list{
+    display: flex;
+    gap: 70px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
 .timeline-content{
+    min-width: 800px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     gap: 70px;
+
+    padding-bottom: 50px;
 }
 
 .timeline-text{
@@ -100,8 +109,9 @@
 }
 
 .timeline-image img{
-    width: 100%;
+    width: 500px;
     border-radius: 15px;
+
     transition: transform 0.3s ease;
 }
 .timeline-image img:hover{

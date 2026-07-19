@@ -41,6 +41,18 @@
     background: white;
 
     cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.delivery-option button:hover{
+    background: #451f00;
+    color: white;
+}
+
+.delivery-option button:active{
+    background: #7A563E;
+    color: white;
 }
 
 .delivery-option .active{
@@ -79,8 +91,18 @@
     background: white;
 
     cursor: pointer;
+
+    transition: 0.3s;
+}
+.address-box button:hover{
+    background: #3fdf00;
+    color: white;
 }
 
+.address-box button:active{
+    background: #268700;
+    color: white;
+}
 
 /* ============================
    SELECT ALL
@@ -172,12 +194,38 @@
     background: white;
 
     cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.quantity button:hover{
+    background: #c0bebe;
+    color: white;
+}
+
+.quantity button:active{
+    background: #747474;
+    color: rgb(250, 247, 247);
 }
 
 .quantity span{
     width: 40px;
 
     text-align: center;
+}
+
+input[type="number"]{
+    border: none;
+    outline: none;
+    width: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 
@@ -219,4 +267,15 @@
     color: white;
 
     cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.checkout-box button:hover{
+    background: #451f00;
+}
+
+.checkout-box button:active{
+    background: #7A563E;
+    color: white;
 }

@@ -135,11 +135,15 @@ nav a{
     color: white;
 }
 
+/* SHOPPING */
+.header-shopping .logo h2{
+    color: rgb(0, 0, 0);
+}
 
 /* STORE */
 
 .header-store .logo{
-    color: rgb(255, 255, 255);
+    color: rgb(253, 249, 249);
 }
 
 .header-store .nav-a-sejarah-kita{
@@ -158,7 +162,7 @@ nav a{
 /* DETAIL */
 
 .detail-header .logo h2{
-    color: #5A3622;
+    color: #000000;
 }
 
 .detail-header a{
@@ -174,6 +178,10 @@ nav a{
     color: rgb(0, 0, 0);
 }
 
+/*CART*/
+.header-cart .logo h2{
+    color: rgb(0, 0, 0);
+}
 
 
 /* ============================
