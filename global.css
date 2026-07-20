@@ -1,6 +1,9 @@
 /* ============================
    GOOGLE FONT & RESET
 ============================ */
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
@@ -99,6 +102,7 @@ nav a{
 }
 .nav-a-sejarah-kita:hover{
     border-bottom: 2px solid rgb(0, 114, 167);
+    transition: all 0.3s ease;
 }
 
 .nav-a-shopping{

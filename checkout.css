@@ -154,7 +154,14 @@
 }
 
 .payment-list button:hover {
-    background: #f6f2ef;
+    background: #6d4c3d;
+    color: white;
+}
+
+.payment-list button.active {
+    background: #6d4c3d;
+    color: white;
+    border: 1px solid #6d4c3d;
 }
 
 /* ===================== SUMMARY ===================== */

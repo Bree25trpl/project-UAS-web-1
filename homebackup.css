@@ -1,0 +1,193 @@
+/* ============================
+   HOME HEADER
+============================ */
+
+.header-home{
+    background-image: url("gambar/wisata-keramik-plered-purwakarta-ikon-budaya.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    position: relative;
+}
+
+.header-home::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+
+/* ============================
+   HERO
+============================ */
+
+.hero{
+    position: relative;
+    z-index: 1;
+
+    height: calc(100vh - 85px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 80px;
+
+    color: white;
+}
+
+.hero h1{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.hero-text{
+    width: 550px;
+
+    font-size: 20px;
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+
+/* ============================
+   TIMELINE
+============================ */
+
+.timeline{
+    padding: 80px 100px;
+}
+
+.timeline h2{
+    text-align: center;
+    font-size: 48px;
+
+    margin-bottom: 70px;
+}
+
+.timeline-list{
+    display: flex;
+    gap: 70px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.timeline-content{
+    min-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+
+    padding-bottom: 50px;
+}
+
+.timeline-text{
+    flex: 1;
+}
+
+.timeline-text h3{
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.timeline-text p{
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.timeline-image{
+    flex: 1;
+}
+
+.timeline-image img{
+    width: 500px;
+    border-radius: 15px;
+
+    transition: transform 0.3s ease;
+}
+.timeline-image img:hover{
+    transform: scale(1.05);
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* ============================
+   UMKM
+============================ */
+
+.umkm{
+    padding: 80px 0;
+    position: relative;
+}
+
+.umkm h2{
+    text-align: center;
+    font-size: 48px;
+    gap: 20px;
+    margin-bottom: 70px;
+}
+
+.umkm-background{
+    position: relative;
+
+    background-image: url("gambar/Screenshot 2026-07-13 220450.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 650px;
+}
+
+.umkm-card{
+    position: absolute;
+
+    top: 50px;
+    left: 60px;
+
+    width: 450px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+
+    transition: transform 0.3s ease;
+}
+.umkm-card:hover{
+    transform: scale(1.05);
+}
+
+.umkm-card img{
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content h3{
+    margin-bottom: 12px;
+}
+
+.card-content p{
+    line-height: 1.6;
+    text-align: justify;
+}

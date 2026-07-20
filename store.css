@@ -120,6 +120,11 @@
     transform: translateY(-5px);
 }
 
+.product-card a{
+    text-decoration: none;
+    color: black;
+}
+
 .product-card img{
     width: 100%;
     height: 260px;
