@@ -23,7 +23,11 @@
           <li><a>🛒</a></li>
           <li><a>👤</a></li>
           <li>
-            <button id="darkModeToggle" class="dark-toggle-btn" aria-label="Toggle Dark Mode">
+            <button
+              id="darkModeToggle"
+              class="dark-toggle-btn"
+              aria-label="Toggle Dark Mode"
+            >
               🌙
             </button>
           </li>
@@ -35,14 +39,14 @@
       <section class="product-detail">
         <figure class="product-image">
           <img
-            src="gambar/7eb68d7aa9cc5bf129b096b294d853ad.jpg"
-            alt="Mangkok Sri Baduga"
+            src="https://i.pinimg.com/736x/51/5e/10/515e10d52a69cceccd171e07ca5f439b.jpg"
+            alt="Gelas Lucu"
           />
         </figure>
 
         <article class="product-info">
           <section>
-            <h1>Mangkok Sri Baduga</h1>
+            <h1>Gelas Lucu</h1>
 
             <div class="rating">
               ★★★★★
@@ -55,19 +59,82 @@
           <section class="purchase-box">
             <h2>Jumlah</h2>
 
-<div class="quantity">
-  <button onclick="ubahJumlah(-1)">-</button>
-  <input type="number" value="1" min="1" id="qtyInput" />
-  <button onclick="ubahJumlah(1)">+</button>
-</div>
+            <div class="quantity">
+              <button onclick="ubahJumlah(-1)">-</button>
+              <input type="number" value="1" min="1" id="qtyInput" />
+              <button onclick="ubahJumlah(1)">+</button>
+            </div>
 
-<p>Total <strong id="totalPrice">Rp200.000</strong></p>
+            <p>Total <strong id="totalPrice">Rp200.000</strong></p>
 
             <div class="button-group">
-              <button onclick="window.location.href='cart.html'">Add To Cart</button>
+              <button onclick="window.location.href = 'cart.html'">
+                Add To Cart
+              </button>
             </div>
           </section>
         </article>
+      </section>
+      <section class="product-description">
+        <h2>Detail Produk</h2>
+
+        <table class="product-spec">
+          <tr>
+            <td><strong>Nama Produk</strong></td>
+            <td>Mangkok Sri Baduga</td>
+          </tr>
+          <tr>
+            <td><strong>Material</strong></td>
+            <td>Tanah liat berkualitas tinggi</td>
+          </tr>
+          <tr>
+            <td><strong>Teknik Pembuatan</strong></td>
+            <td>Dibuat secara handmade oleh pengrajin Plered</td>
+          </tr>
+          <tr>
+            <td><strong>Warna</strong></td>
+            <td>Cokelat Natural</td>
+          </tr>
+          <tr>
+            <td><strong>Diameter</strong></td>
+            <td>18 cm</td>
+          </tr>
+          <tr>
+            <td><strong>Tinggi</strong></td>
+            <td>8 cm</td>
+          </tr>
+          <tr>
+            <td><strong>Berat</strong></td>
+            <td>±700 gram</td>
+          </tr>
+        </table>
+
+        <h2>Deskripsi</h2>
+
+        <p>
+          Mangkok Sri Baduga merupakan produk keramik khas Sentra Keramik
+          Plered, Purwakarta, yang dibuat menggunakan tanah liat pilihan dan
+          diproses secara tradisional oleh pengrajin lokal. Setiap produk
+          memiliki karakter unik dengan sentuhan akhir yang rapi sehingga cocok
+          digunakan sebagai peralatan makan maupun dekorasi rumah.
+        </p>
+
+        <p>
+          Produk ini memiliki daya tahan yang baik, permukaan yang halus, serta
+          desain klasik yang mencerminkan kekayaan budaya kerajinan keramik
+          Plered. Sangat cocok untuk penggunaan sehari-hari maupun sebagai
+          hadiah dan koleksi.
+        </p>
+
+        <h2>Keunggulan</h2>
+
+        <ul class="product-feature">
+          <li>✔ Handmade oleh pengrajin lokal Plered.</li>
+          <li>✔ Menggunakan tanah liat berkualitas.</li>
+          <li>✔ Desain khas keramik tradisional.</li>
+          <li>✔ Cocok untuk dekorasi maupun kebutuhan rumah tangga.</li>
+          <li>✔ Mendukung produk UMKM Indonesia.</li>
+        </ul>
       </section>
     </main>
     <script src="Java Script/produk.js"></script>
