@@ -319,3 +319,49 @@ footer {
     color: #737373;
     font-size: 14px;
 }
+
+/* Tablet */
+@media (max-width: 992px) {
+
+    .nav-a-rekomendasi{
+        display: none;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo h2{
+        font-size: 18px;
+    }
+}
+
+/* HP */
+@media (max-width: 768px){
+
+    nav{
+        padding: 15px 25px;
+    }
+
+    nav ul{
+        gap: 15px;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+    }
+
+    .logo img{
+        width: 42px;
+        height: 42px;
+    }
+
+    .logo h2{
+        font-size: 16px;
+    }
+}
