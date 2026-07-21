@@ -1,35 +1,34 @@
-// shopping.js
 document.addEventListener('DOMContentLoaded', function() {
   const track = document.querySelector('.featured-track');
+  const cards = document.querySelectorAll('.featured-card');
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
-  
-  // Ambil semua kartu di dalam track
-  const cards = track.querySelectorAll('.featured-card');
-  let currentIndex = 0;
 
-  // Fungsi untuk menggeser track
-  function updateSlide() {
-    // Hitung lebar satu kartu + jarak gap (40px dari CSS kita)
-    const cardWidth = cards[0].offsetWidth + 40; 
-    
-    // Geser track ke kiri sebanyak (index * lebar kartu)
-    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  let currentIndex = 0;
+  const totalCards = cards.length;
+
+  function updateSlider() {
+    const offset = -currentIndex * 100;
+    track.style.transform = 'translateX(' + offset + '%)';
   }
 
-  // Tombol Next (Kanan)
   nextBtn.addEventListener('click', function() {
-    if (currentIndex < cards.length - 1) {
+    if (currentIndex < totalCards - 1) {
       currentIndex++;
-      updateSlide();
+    } else {
+      currentIndex = 0;
     }
+    updateSlider();
   });
 
-  // Tombol Prev (Kiri)
   prevBtn.addEventListener('click', function() {
     if (currentIndex > 0) {
       currentIndex--;
-      updateSlide();
+    } else {
+      currentIndex = totalCards - 1;
     }
+    updateSlider();
   });
+
+  updateSlider();
 });

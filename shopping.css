@@ -349,20 +349,173 @@ input[type="text"]{
 
 }
 
-/* Tambahan CSS untuk slider */
-.featured-track-wrapper {
-  overflow: hidden;           /* Menyembunyikan kartu yang ada di luar layar */
-  width: 100%;                /* Sesuaikan lebar jika perlu, misal max-width: 800px */
+/* ============================
+   FEATURED STORE (SLIDER FIX)
+============================ */
+
+.featured {
+  background-color: #d9e0e2;
+  padding: 50px 60px;
   display: flex;
-  justify-content: center;    /* Agar track berada di tengah */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 280px;
+  gap: 20px;
+}
+
+.featured-track-wrapper {
+  overflow: hidden;
+  flex: 1;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .featured-track {
   display: flex;
-  gap: 40px;                  /* Jarak antar kartu (sama seperti CSS Anda) */
-  transition: transform 0.3s ease-in-out; /* Animasi halus saat bergeser */
+  transition: transform 0.5s ease-in-out;
 }
 
 .featured-card {
-  flex: 0 0 auto;             /* Mencegah kartu mengecil/melebar saat digeser */
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.featured-card img {
+  width: 240px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.featured-info {
+  text-align: left;
+  flex: 1;
+}
+
+.featured-info h2 {
+  font-size: 26px;
+  margin: 0 0 6px 0;
+  color: #222;
+}
+
+.featured-info p {
+  font-size: 16px;
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.arrow {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  z-index: 5;
+  position: relative;
+}
+
+.arrow:hover {
+  background: #e8e8e8;
+  transform: scale(1.05);
+}
+
+#prevBtn {
+  order: -1;
+}
+
+#nextBtn {
+  order: 1;
+}
+
+/* ============================
+   RESPONSIVE SLIDER
+============================ */
+
+@media (max-width: 768px) {
+  .featured {
+    padding: 40px 20px;
+    min-height: auto;
+    gap: 10px;
+  }
+
+  .featured-track-wrapper {
+    max-width: 100%;
+  }
+
+  .featured-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+    padding: 10px 10px;
+  }
+
+  .featured-card img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .featured-info {
+    text-align: center;
+  }
+
+  .featured-info h2 {
+    font-size: 22px;
+  }
+
+  .featured-info p {
+    font-size: 15px;
+  }
+
+  .arrow {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured {
+    padding: 30px 12px;
+    gap: 6px;
+  }
+
+  .featured-card img {
+    width: 150px;
+    height: 120px;
+  }
+
+  .featured-info h2 {
+    font-size: 18px;
+  }
+
+  .featured-info p {
+    font-size: 13px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    font-size: 13px;
+  }
 }

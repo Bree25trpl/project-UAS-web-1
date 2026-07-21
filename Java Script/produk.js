@@ -1,4 +1,14 @@
-// produk.js
+// ============================================
+// PRODUK.JS - SUDAH FIX
+// ============================================
+
+const HARGA_SATUAN = 200000;
+
+function updateTotalHarga(jumlah) {
+  const totalHarga = jumlah * HARGA_SATUAN;
+  document.getElementById('totalPrice').textContent = 'Rp' + totalHarga.toLocaleString('id-ID');
+}
+
 function ubahJumlah(delta) {
   const input = document.getElementById('qtyInput');
   let jumlah = parseInt(input.value, 10);
@@ -6,44 +16,45 @@ function ubahJumlah(delta) {
   if (isNaN(jumlah)) jumlah = 1;
   jumlah += delta;
   if (jumlah < 1) jumlah = 1;
+  
   input.value = jumlah;
-
-  const hargaSatuan = 200000;
-  const totalHarga = jumlah * hargaSatuan;
-  document.getElementById('totalPrice').textContent = 'Rp' + totalHarga.toLocaleString('id-ID');
+  updateTotalHarga(jumlah);
 }
 
-// Event listener jika user mengetik langsung angkanya
 document.getElementById('qtyInput').addEventListener('input', function() {
   let jumlah = parseInt(this.value, 10);
   if (isNaN(jumlah) || jumlah < 1) jumlah = 1;
   this.value = jumlah;
-
-  const totalHarga = jumlah * 200000;
-  document.getElementById('totalPrice').textContent = 'Rp' + totalHarga.toLocaleString('id-ID');
+  updateTotalHarga(jumlah);
 });
 
-// --- TAMBAHAN: SIMPAN DATA SAAT TOMBOL PURCHASE DIKLIK ---
-// Kita pilih tombol Purchase (tombol terakhir di grup)
 document.querySelector('.button-group button:last-child').addEventListener('click', function(e) {
-  // Ambil jumlah barang dari input
   const qty = parseInt(document.getElementById('qtyInput').value);
-  
-  // Ambil total harga yang sudah terformat (contoh: "Rp200.000")
   const totalString = document.getElementById('totalPrice').textContent;
-  
-  // Ubah string Rupiah menjadi angka murni (hilangkan "Rp" dan titik)
   const amount = parseInt(totalString.replace(/[^0-9]/g, ''));
 
-  // Simpan data ke localStorage
-  localStorage.setItem('orderData', JSON.stringify({
+  const orderData = {
     name: 'Mangkok Sri Baduga',
-    price: 'Rp200.000',
+    price: HARGA_SATUAN,
     qty: qty,
     total: totalString,
-    amount: amount  // angka murni untuk perhitungan ongkir
-  }));
+    amount: amount
+  };
 
-  // Redirect ke halaman checkout
+  localStorage.setItem('orderData', JSON.stringify(orderData));
+  console.log('Data disimpan:', orderData);
+
   window.location.href = 'checkout.html';
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const data = JSON.parse(localStorage.getItem('orderData'));
+
+  if (data && data.qty) {
+    document.getElementById('qtyInput').value = data.qty;
+    updateTotalHarga(data.qty);
+  } else {
+    document.getElementById('qtyInput').value = 1;
+    updateTotalHarga(1);
+  }
 });
