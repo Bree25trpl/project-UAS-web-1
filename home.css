@@ -2,22 +2,43 @@
    HOME HEADER
 ============================ */
 
-.header-home{
-    background-image: url("wisata-keramik-plered-purwakarta-ikon-budaya.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    height: 100vh;
+.header-home {
     position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.header-home::before{
-    content: "";
+/* ============================
+   VIDEO BACKGROUND
+============================ */
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -2;
+}
+
+/* ============================
+   OVERLAY
+============================ */
+
+.overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+
+    background: rgba(0, 0, 0, 0.241);
+
+    z-index: -1;
 }
+
 
 
 /* ============================
@@ -68,7 +89,7 @@
 .timeline h2{
     text-align: center;
     font-size: 48px;
-
+    color: #333333;
     margin-bottom: 70px;
 }
 
@@ -230,7 +251,10 @@
 
 .peta-section {
     padding: 80px 0;
-    background-color: #ffffff; /* Background putih bersih */
+}
+
+.peta-section h2{
+    color: #333333;
 }
 
 .section-title-center {
@@ -286,7 +310,6 @@
 ============================ */
 .umkm {
     padding: 80px 20px;
-    background-color: #ffffff;
     text-align: center;
 }
 
@@ -294,7 +317,7 @@
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 50px;
-    color: #222;
+    color: #333333;
 }
 
 .umkm-container {
