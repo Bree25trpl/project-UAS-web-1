@@ -7,9 +7,23 @@ document.addEventListener('DOMContentLoaded', function () {
   const totalHargaEl = document.getElementById('totalHargaCart');
   const checkedCountEl = document.getElementById('checkedCount');
   const checkoutBtn = document.getElementById('checkoutBtn');
+  const addressDisplay = document.getElementById('addressDisplay');
 
   // Ambil cart dari localStorage
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+  // Ambil data alamat
+  let shippingAddress = JSON.parse(localStorage.getItem('shippingAddress'));
+
+  // Tampilkan alamat jika ada
+  if (addressDisplay && shippingAddress) {
+    addressDisplay.innerHTML = `
+      <strong>${shippingAddress.name}</strong><br>
+      ${shippingAddress.address}<br>
+      ${shippingAddress.city}, ${shippingAddress.zip}<br>
+      📞 ${shippingAddress.phone}
+    `;
+  }
 
   // Render semua item
   function renderCart() {
@@ -72,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Checkbox
     document.querySelectorAll('.cart-checkbox').forEach(cb => {
       cb.addEventListener('click', function (e) {
-        e.stopPropagation(); // biar tidak bentrok dengan event lain
+        e.stopPropagation();
         const isChecked = this.dataset.checked === 'true';
         this.dataset.checked = (!isChecked).toString();
         this.textContent = isChecked ? '☐' : '☑';
@@ -143,7 +157,16 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
+    // Cek apakah alamat sudah diisi
+    const shippingAddress = JSON.parse(localStorage.getItem('shippingAddress'));
+    if (!shippingAddress) {
+      alert('Silakan tambahkan alamat pengiriman terlebih dahulu!');
+      return;
+    }
+
+    // Simpan data yang akan di-checkout
     localStorage.setItem('checkoutItems', JSON.stringify(selected));
+    localStorage.setItem('checkoutAddress', JSON.stringify(shippingAddress));
     window.location.href = 'checkout.html';
   });
 

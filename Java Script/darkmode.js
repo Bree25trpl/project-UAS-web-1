@@ -56,3 +56,4 @@ function updateToggleButton(isDark) {
         toggleBtn.textContent = isDark ? '☀️' : '🌙';
     }
 }
+

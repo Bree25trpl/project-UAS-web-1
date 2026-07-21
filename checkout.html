@@ -71,16 +71,43 @@
 
         <article class="shipping-card">
           <h3>Shipping Option</h3>
-          <label><input type="radio" name="shipping" /> Gosend</label>
-          <label><input type="radio" name="shipping" /> JNT Delivery</label>
+          <label><input type="radio" name="shipping" value="gosend" /> Gosend (Rp15.000)</label>
+          <label><input type="radio" name="shipping" value="jnt" /> JNT Delivery (Rp25.000)</label>
         </article>
 
         <article class="payment-card">
           <h3>Payment Method</h3>
+          <p>Pilih metode pembayaran (biaya layanan bervariasi)</p>
           <div class="payment-list">
-            <button>BRI</button>
-            <button>PayPal</button>
-            <button>BCA</button>
+            <button class="active">BRI
+              <span class="fee-badge">FREE</span>
+            </button>
+            <button>BCA
+              <span class="fee-badge">FREE</span>
+            </button>
+            <button>Mandiri
+              <span class="fee-badge">FREE</span>
+            </button>
+            <button>BNI
+              <span class="fee-badge">FREE</span>
+            </button>
+          </div>
+          <div class="payment-list" style="margin-top: 10px;">
+            <button>PayPal
+              <span class="fee-badge">5.000</span>
+            </button>
+            <button>Dana
+              <span class="fee-badge">2.000</span>
+            </button>
+            <button>OVO
+              <span class="fee-badge">2.000</span>
+            </button>
+            <button>GoPay
+              <span class="fee-badge">3.000</span>
+            </button>
+            <button>ShopeePay
+              <span class="fee-badge">3.000</span>
+            </button>
           </div>
         </article>
       </section>
@@ -90,20 +117,20 @@
           <h3>Order Summary</h3>
           <div class="summary-row">
             <span>Sub Total Pesanan</span>
-            <span id="summary-subtotal">Rp200.000</span>
+            <span id="summary-subtotal">Rp0</span>
           </div>
           <div class="summary-row">
             <span>Sub Total Pengiriman</span>
-            <span>Rp20.000</span>
+            <span id="summary-shipping">Rp0</span>
           </div>
-          <div class="summary-row">
+          <div class="summary-row service-fee">
             <span>Biaya Layanan</span>
-            <span>Rp20.000</span>
+            <span id="summary-service-fee">GRATIS</span>
           </div>
           <hr />
           <div class="summary-total">
             <span>Total</span>
-            <strong id="summary-grand-total">Rp250.000</strong>
+            <strong id="summary-grand-total">Rp0</strong>
           </div>
           <button class="btn-bayar">Bayar</button>
         </section>

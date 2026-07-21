@@ -205,6 +205,7 @@ body.dark-mode .product-specification table td {
     border-bottom-color: #404040;
 }
 
+
 /* --- Dark Mode Checkout --- */
 body.dark-mode .order-card,
 body.dark-mode .customer-card,
@@ -444,4 +445,1010 @@ body.dark-mode .product-card a {
 /* Di mode gelap */
 body.dark-mode .dark-toggle-btn {
     color: #ffb347;
+}
+
+/* --- Address Section Background --- */
+body.dark-mode .address-section {
+    background-color: #121212 !important;
+}
+
+/* --- Address Card --- */
+body.dark-mode .address-card {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode .address-card h2 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .address-card p.subtitle {
+    color: #aaaaaa !important;
+}
+
+/* --- Form Labels --- */
+body.dark-mode .form-group label {
+    color: #c0c0c0 !important;
+}
+
+/* --- Form Inputs & Textareas --- */
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: #1e1e1e !important;
+    color: #e9ecef !important;
+    border-color: #404040 !important;
+    caret-color: #e9ecef !important;
+}
+
+/* Placeholder */
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+    color: #888888 !important;
+    opacity: 1 !important;
+}
+
+/* Input Focus */
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+    background-color: #2a2a2a !important;
+    border-color: #4dabf7 !important;
+    box-shadow: 0 0 0 4px rgba(77, 171, 247, 0.15) !important;
+}
+
+/* --- Error States di Dark Mode --- */
+body.dark-mode .form-group.error input,
+body.dark-mode .form-group.error textarea {
+    border-color: #ff6b6b !important;
+    background-color: #2a1a1a !important;
+}
+
+body.dark-mode .error-message {
+    color: #ff6b6b !important;
+}
+
+/* --- Submit Button --- */
+body.dark-mode .btn-submit {
+    background-color: #6d4c3d !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(109, 76, 61, 0.4) !important;
+}
+
+body.dark-mode .btn-submit:hover {
+    background-color: #8a5e4a !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(109, 76, 61, 0.5) !important;
+}
+
+/* --- Header Address di Dark Mode --- */
+body.dark-mode .header-address {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #404040 !important;
+}
+
+body.dark-mode .header-address .logo h2 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .nav-address ul li a {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .nav-address ul li a:hover {
+    color: #ffb347 !important;
+}
+
+/* --- Form Row (Kota & Kode Pos) --- */
+body.dark-mode .form-row .form-group input {
+    background-color: #1e1e1e !important;
+    color: #e9ecef !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .form-row .form-group input:focus {
+    background-color: #2a2a2a !important;
+    border-color: #4dabf7 !important;
+    box-shadow: 0 0 0 4px rgba(77, 171, 247, 0.15) !important;
+}
+
+/* --- Fix untuk autofill Chrome di Dark Mode --- */
+body.dark-mode .form-group input:-webkit-autofill,
+body.dark-mode .form-group textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #1e1e1e inset !important;
+    -webkit-text-fill-color: #e9ecef !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .form-group input:-webkit-autofill:focus,
+body.dark-mode .form-group textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #2a2a2a inset !important;
+    border-color: #4dabf7 !important;
+}
+
+/* --- Footer di Dark Mode (override) --- */
+body.dark-mode footer .footer-container {
+    background-color: #1a1a1a !important;
+}
+
+body.dark-mode footer .footer-brand h2 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode footer .footer-brand p {
+    color: #aaaaaa !important;
+}
+
+body.dark-mode footer .footer-bottom p {
+    color: #888888 !important;
+}
+
+/* --- Scrollbar untuk textarea di dark mode --- */
+body.dark-mode .form-group textarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+body.dark-mode .form-group textarea::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+body.dark-mode .form-group textarea::-webkit-scrollbar-thumb {
+    background: #404040;
+    border-radius: 4px;
+}
+
+body.dark-mode .form-group textarea::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
+/* --- Cart Page Background --- */
+body.dark-mode .cart-page {
+    background-color: transparent;
+}
+
+/* --- Delivery Options --- */
+body.dark-mode .delivery-option button {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .delivery-option button:hover {
+    background-color: #451f00 !important;
+    color: white !important;
+}
+
+body.dark-mode .delivery-option .active {
+    background-color: #7A563E !important;
+    color: white !important;
+}
+
+/* --- Address Box --- */
+body.dark-mode .address-box {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .address-box h4 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .address-box button {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .address-box button:hover {
+    background-color: #3fdf00 !important;
+    color: #121212 !important;
+}
+
+/* --- Select All --- */
+body.dark-mode .select-all {
+    color: #e0e0e0 !important;
+}
+
+/* --- Cart Card --- */
+body.dark-mode .cart-card {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.dark-mode .cart-card .store-name {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .cart-card .store-name span {
+    color: #aaaaaa !important;
+}
+
+/* --- Product Info in Cart --- */
+body.dark-mode .cart-content .product-info h4 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .cart-content .product-info p {
+    color: #aaaaaa !important;
+}
+
+/* --- Quantity Controls --- */
+body.dark-mode .quantity button {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border-color: #555555 !important;
+}
+
+body.dark-mode .quantity button:hover {
+    background-color: #555555 !important;
+    color: white !important;
+}
+
+body.dark-mode .quantity span {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .quantity input[type="number"] {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* --- Checkout Box --- */
+body.dark-mode .checkout-box {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .checkout-box p {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .checkout-box strong {
+    color: #ffb347 !important;
+}
+
+body.dark-mode .checkout-box button {
+    background-color: #7A563E !important;
+    color: white !important;
+}
+
+body.dark-mode .checkout-box button:hover {
+    background-color: #451f00 !important;
+}
+
+/* --- Cart Header (Detail Header) --- */
+body.dark-mode .detail-header {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #404040 !important;
+}
+
+body.dark-mode .detail-header .logo h2 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .detail-header .logo h3 {
+    color: #aaaaaa !important;
+}
+
+body.dark-mode .detail-nav ul li a {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .detail-nav ul li a:hover {
+    color: #ffb347 !important;
+}
+
+/* --- Cart Item Images --- */
+body.dark-mode .cart-content img {
+    border: 1px solid #404040 !important;
+}
+
+/* --- Delete / Remove Button (jika ada) --- */
+body.dark-mode .cart-card .remove-btn {
+    color: #ff6b6b !important;
+}
+
+body.dark-mode .cart-card .remove-btn:hover {
+    color: #ff4444 !important;
+}
+
+/* --- Empty Cart State --- */
+body.dark-mode .empty-cart h2 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .empty-cart p {
+    color: #aaaaaa !important;
+}
+
+body.dark-mode .empty-cart a {
+    background-color: #7A563E !important;
+    color: white !important;
+}
+
+body.dark-mode .empty-cart a:hover {
+    background-color: #451f00 !important;
+}
+
+/* --- Container Description --- */
+body.dark-mode .product-description {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+/* --- Heading --- */
+body.dark-mode .product-description h2 {
+    color: #e0e0e0 !important;
+    border-bottom-color: #404040 !important;
+}
+
+/* --- Tabel Spesifikasi --- */
+body.dark-mode .product-spec {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .product-spec tr {
+    border-bottom-color: #404040 !important;
+}
+
+body.dark-mode .product-spec td {
+    color: #e0e0e0 !important;
+    border-bottom-color: #404040 !important;
+}
+
+body.dark-mode .product-spec td strong {
+    color: #794300 !important;
+}
+
+/* --- Alternatif: Row ganjil-genap --- */
+body.dark-mode .product-spec tr:nth-child(odd) {
+    background-color: #2a2a2a !important;
+}
+
+body.dark-mode .product-spec tr:nth-child(even) {
+    background-color: #333333 !important;
+}
+
+/* --- Deskripsi Paragraf --- */
+body.dark-mode .product-description p {
+    color: #c0c0c0 !important;
+    line-height: 1.8 !important;
+}
+
+/* --- Keunggulan / Feature List --- */
+body.dark-mode .product-feature {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .product-feature li {
+    color: #c0c0c0 !important;
+    border-bottom-color: #404040 !important;
+}
+
+body.dark-mode .product-feature li::before {
+    color: #ffb347 !important;
+}
+
+/* --- Alternatif: Feature dengan icon centang --- */
+body.dark-mode .product-feature li {
+    color: #c0c0c0 !important;
+}
+
+body.dark-mode .product-feature li .check-icon {
+    color: #4CAF50 !important;
+}
+
+/* --- Container card description (jika pakai card) --- */
+body.dark-mode .description-card {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .description-card h2 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .description-card p {
+    color: #c0c0c0 !important;
+}
+
+/* --- Tabel dengan border --- */
+body.dark-mode .product-spec {
+    border: 1px solid #404040 !important;
+}
+
+body.dark-mode .product-spec th {
+    background-color: #3a3a3a !important;
+    color: #e0e0e0 !important;
+    border-bottom-color: #404040 !important;
+}
+
+body.dark-mode .product-spec td {
+    border-bottom-color: #404040 !important;
+}
+
+/* --- Hover effect untuk tabel --- */
+body.dark-mode .product-spec tr:hover {
+    background-color: #3a3a3a !important;
+}
+
+/* --- Feature dengan background --- */
+body.dark-mode .product-feature {
+    background-color: #2d2d2d !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+}
+
+body.dark-mode .product-feature li {
+    padding: 8px 0 !important;
+    color: #c0c0c0 !important;
+    list-style: none !important;
+}
+
+body.dark-mode .product-feature li::before {
+    content: "✔ " !important;
+    color: #ffb347 !important;
+    font-weight: bold !important;
+}
+
+/* --- Jika pakai card dengan shadow --- */
+body.dark-mode .product-description .card {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* --- Scrollbar untuk tabel jika overflow --- */
+body.dark-mode .product-spec::-webkit-scrollbar {
+    width: 6px;
+}
+
+body.dark-mode .product-spec::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+body.dark-mode .product-spec::-webkit-scrollbar-thumb {
+    background: #404040;
+    border-radius: 4px;
+}
+
+body.dark-mode .product-spec::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
+/* --- Cart Page Background --- */
+body.dark-mode .cart-page {
+    background-color: transparent;
+}
+
+/* --- Delivery Options --- */
+body.dark-mode .delivery-option button {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .delivery-option button:hover {
+    background-color: #451f00 !important;
+    color: white !important;
+}
+
+body.dark-mode .delivery-option .active {
+    background-color: #7A563E !important;
+    color: white !important;
+}
+
+/* --- Address Box --- */
+body.dark-mode .address-box {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .address-box h4 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .address-box #addressDisplay {
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .address-box #addressDisplay strong {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .address-box button {
+    background-color: #7A563E !important;
+    color: white !important;
+    border: none !important;
+}
+
+body.dark-mode .address-box button:hover {
+    background-color: #451f00 !important;
+    color: white !important;
+}
+
+/* --- Select All --- */
+body.dark-mode .select-all {
+    color: #e0e0e0 !important;
+}
+
+/* --- Cart Card --- */
+body.dark-mode .cart-card {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.dark-mode .cart-card .store-name h3 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .cart-card .store-name span {
+    color: #aaaaaa !important;
+}
+
+/* --- Product Info in Cart --- */
+body.dark-mode .cart-content .product-info h4 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .cart-content .product-info p {
+    color: #ffb347 !important;
+}
+
+/* --- Cart Checkbox --- */
+body.dark-mode .cart-checkbox {
+    color: #b0b0b0 !important;
+    cursor: pointer !important;
+    font-size: 24px !important;
+}
+
+body.dark-mode .cart-checkbox[data-checked="true"] {
+    color: #c49a7a !important;
+}
+
+body.dark-mode .cart-checkbox:hover {
+    color: #c49a7a !important;
+}
+
+/* --- Quantity Controls --- */
+body.dark-mode .quantity button {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border-color: #555555 !important;
+}
+
+body.dark-mode .quantity button:hover {
+    background-color: #555555 !important;
+    color: white !important;
+}
+
+body.dark-mode .quantity button:active {
+    background-color: #747474 !important;
+    color: rgb(250, 247, 247) !important;
+}
+
+body.dark-mode .quantity span {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .quantity input[type="number"] {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border: none !important;
+    outline: none !important;
+}
+
+body.dark-mode .quantity input[type="number"]:focus {
+    background-color: #3d3d3d !important;
+}
+
+/* --- Checkout Box --- */
+body.dark-mode .checkout-box {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .checkout-box p {
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .checkout-box strong {
+    color: #ffb347 !important;
+}
+
+body.dark-mode .checkout-box #checkedCount {
+    color: #c49a7a !important;
+    font-weight: bold !important;
+}
+
+body.dark-mode .checkout-box #totalHargaCart {
+    color: #c49a7a !important;
+}
+
+body.dark-mode .checkout-box button {
+    background-color: #7A563E !important;
+    color: white !important;
+    border: none !important;
+}
+
+body.dark-mode .checkout-box button:hover {
+    background-color: #451f00 !important;
+}
+
+body.dark-mode .checkout-box button:active {
+    background-color: #7A563E !important;
+    color: white !important;
+}
+
+/* --- Cart Header (Detail Header) --- */
+body.dark-mode .detail-header {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #404040 !important;
+}
+
+body.dark-mode .detail-header .logo h2 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .detail-header .logo h3 {
+    color: #aaaaaa !important;
+}
+
+body.dark-mode .detail-nav ul li a {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .detail-nav ul li a:hover {
+    color: #ffb347 !important;
+}
+
+/* --- Cart Item Images --- */
+body.dark-mode .cart-content img {
+    border: 1px solid #404040 !important;
+}
+
+/* --- Empty Cart State --- */
+body.dark-mode #cartContainer p {
+    color: #888888 !important;
+}
+
+/* --- Checkout Page Additional --- */
+
+/* Shipping Options - Dark Mode */
+body.dark-mode .shipping-card label {
+    background-color: #3d3d3d !important;
+    border-color: #555555 !important;
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .shipping-card label:hover {
+    background-color: #4d4d4d !important;
+    border-color: #7A563E !important;
+}
+
+body.dark-mode .shipping-card input[type="radio"] {
+    accent-color: #c49a7a !important;
+}
+
+body.dark-mode .shipping-card label:has(input:checked) {
+    background-color: #4d3d35 !important;
+    border-color: #7A563E !important;
+    color: #e0e0e0 !important;
+}
+
+/* Payment Methods - Dark Mode */
+body.dark-mode .payment-list button {
+    background-color: #3d3d3d !important;
+    border-color: #555555 !important;
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .payment-list button:hover {
+    background-color: #4d4d4d !important;
+    border-color: #7A563E !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .payment-list button.active {
+    background-color: #7A563E !important;
+    color: white !important;
+    border-color: #7A563E !important;
+    box-shadow: 0 4px 15px rgba(122, 86, 62, 0.4) !important;
+}
+
+body.dark-mode .payment-list button:active {
+    transform: scale(0.95) !important;
+}
+
+/* Summary - Dark Mode */
+body.dark-mode .summary-row {
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .summary-row span:last-child {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .summary-card hr {
+    border-top-color: #404040 !important;
+}
+
+body.dark-mode .summary-total {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .summary-total strong {
+    color: #c49a7a !important;
+}
+
+/* Button Bayar */
+body.dark-mode .btn-bayar {
+    background-color: #6d4c3d !important;
+    color: white !important;
+}
+
+body.dark-mode .btn-bayar:hover {
+    background-color: #8a5e4a !important;
+}
+
+body.dark-mode .btn-bayar:active {
+    background-color: #4a3225 !important;
+}
+
+/* --- Price Display --- */
+body.dark-mode .price-qty {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .price-qty span:last-child {
+    color: #c49a7a !important;
+}
+
+/* --- Order Total --- */
+body.dark-mode .order-total span {
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .order-total strong {
+    color: #e0e0e0 !important;
+}
+
+/* --- Customer Info --- */
+body.dark-mode .customer-info h4 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .customer-info p {
+    color: #b0b0b0 !important;
+}
+
+/* --- Product Info Checkout --- */
+body.dark-mode .product-info p {
+    color: #b0b0b0 !important;
+}
+
+/* --- Card Titles --- */
+body.dark-mode .card-title h3 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .card-title p {
+    color: #888888 !important;
+}
+
+/* --- Scrollbar untuk dark mode --- */
+body.dark-mode::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background: #555555;
+    border-radius: 5px;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+    background: #7A563E;
+}
+
+/* --- Fix untuk input number di dark mode --- */
+
+body.dark-mode input[type="number"]::-webkit-inner-spin-button,
+body.dark-mode input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* --- Responsive Dark Mode --- */
+@media (max-width: 768px) {
+    body.dark-mode .address-card {
+        background-color: #2d2d2d !important;
+    }
+    
+    body.dark-mode .checkout-left .order-card,
+    body.dark-mode .checkout-left .customer-card,
+    body.dark-mode .checkout-left .shipping-card,
+    body.dark-mode .checkout-left .payment-card {
+        background-color: #2d2d2d !important;
+    }
+}
+
+/* --- Dark mode untuk product description yang mungkin ada di cart --- */
+body.dark-mode .product-description {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .product-description h2 {
+    color: #e0e0e0 !important;
+    border-bottom-color: #404040 !important;
+}
+
+body.dark-mode .product-description p {
+    color: #c0c0c0 !important;
+    line-height: 1.8 !important;
+}
+
+/* --- Dark mode untuk tabel spesifikasi --- */
+body.dark-mode .product-spec {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .product-spec tr {
+    border-bottom-color: #404040 !important;
+}
+
+body.dark-mode .product-spec td {
+    color: #e0e0e0 !important;
+    border-bottom-color: #404040 !important;
+}
+
+body.dark-mode .product-spec td strong {
+    color: #ffb347 !important;
+}
+
+body.dark-mode .product-spec tr:nth-child(odd) {
+    background-color: #2a2a2a !important;
+}
+
+body.dark-mode .product-spec tr:nth-child(even) {
+    background-color: #333333 !important;
+}
+
+body.dark-mode .product-spec tr:hover {
+    background-color: #3a3a3a !important;
+}
+
+body.dark-mode .product-spec th {
+    background-color: #3a3a3a !important;
+    color: #e0e0e0 !important;
+    border-bottom-color: #404040 !important;
+}
+
+/* --- Product Feature --- */
+body.dark-mode .product-feature {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+}
+
+body.dark-mode .product-feature li {
+    padding: 8px 0 !important;
+    color: #c0c0c0 !important;
+    list-style: none !important;
+    border-bottom-color: #404040 !important;
+}
+
+body.dark-mode .product-feature li::before {
+    content: "✔ " !important;
+    color: #ffb347 !important;
+    font-weight: bold !important;
+}
+
+/* --- Description Card --- */
+body.dark-mode .description-card {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .description-card h2 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .description-card p {
+    color: #c0c0c0 !important;
+}
+
+/* --- Checkout Product Image --- */
+body.dark-mode .product-image img {
+    border: 1px solid #404040 !important;
+}
+
+/* --- Dark mode untuk address form yang sudah ada --- */
+body.dark-mode .address-section {
+    background-color: #121212 !important;
+}
+
+body.dark-mode .address-card {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode .address-card h2 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .address-card p.subtitle {
+    color: #aaaaaa !important;
+}
+
+body.dark-mode .form-group label {
+    color: #c0c0c0 !important;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: #1e1e1e !important;
+    color: #e9ecef !important;
+    border-color: #404040 !important;
+    caret-color: #e9ecef !important;
+}
+
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+    color: #888888 !important;
+    opacity: 1 !important;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+    background-color: #2a2a2a !important;
+    border-color: #4dabf7 !important;
+    box-shadow: 0 0 0 4px rgba(77, 171, 247, 0.15) !important;
+}
+
+body.dark-mode .form-group.error input,
+body.dark-mode .form-group.error textarea {
+    border-color: #ff6b6b !important;
+    background-color: #2a1a1a !important;
+}
+
+body.dark-mode .error-message {
+    color: #ff6b6b !important;
+}
+
+body.dark-mode .btn-submit {
+    background-color: #6d4c3d !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(109, 76, 61, 0.4) !important;
+}
+
+body.dark-mode .btn-submit:hover {
+    background-color: #8a5e4a !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(109, 76, 61, 0.5) !important;
+}
+
+/* --- Dark mode untuk autofill Chrome --- */
+body.dark-mode .form-group input:-webkit-autofill,
+body.dark-mode .form-group textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #1e1e1e inset !important;
+    -webkit-text-fill-color: #e9ecef !important;
+    border-color: #404040 !important;
+}
+
+body.dark-mode .form-group input:-webkit-autofill:focus,
+body.dark-mode .form-group textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #2a2a2a inset !important;
+    border-color: #4dabf7 !important;
 }

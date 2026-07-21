@@ -222,54 +222,294 @@
     background: #7A563E;
     color: white;
 }
+
+/* ===================== SHIPPING ===================== */
+
+.shipping-card p,
+.payment-card p {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    color: #666;
+}
+
+.shipping-card label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shipping-card label:hover {
+    border-color: #bca898;
+    background: #f9f5f2;
+}
+
+.shipping-card input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #7A563E;
+    cursor: pointer;
+}
+
+.shipping-card label:has(input:checked) {
+    border-color: #7A563E;
+    background: #f0e8e3;
+}
+
+/* ===================== PAYMENT ===================== */
+
+.payment-list {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.payment-list button {
+    flex: 1;
+    padding: 12px 15px;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.payment-list button:hover {
+    background: #f9f5f2;
+    border-color: #bca898;
+    transform: translateY(-2px);
+}
+
+.payment-list button.active {
+    background: #7A563E;
+    color: white;
+    border-color: #7A563E;
+    box-shadow: 0 4px 15px rgba(122, 86, 62, 0.3);
+}
+
+.payment-list button:active {
+    transform: scale(0.95);
+}
+
+/* ===================== SERVICE FEE ===================== */
+
+/* Service fee row dengan warna khusus */
+.summary-row.service-fee {
+    color: #666;
+}
+
+.summary-row.service-fee .fee-free {
+    color: #4CAF50;
+    font-weight: 600;
+}
+
+.summary-row.service-fee .fee-charge {
+    color: #f57c00;
+    font-weight: 600;
+}
+
+/* Dark mode untuk service fee */
+body.dark-mode .summary-row.service-fee {
+    color: #b0b0b0;
+}
+
+body.dark-mode .summary-row.service-fee .fee-free {
+    color: #66bb6a;
+}
+
+body.dark-mode .summary-row.service-fee .fee-charge {
+    color: #ffa726;
+}
+
+/* Payment method dengan badge biaya */
+.payment-list button {
+    position: relative;
+    font-size: 14px;
+}
+
+.payment-list button .fee-badge {
+    display: block;
+    font-size: 10px;
+    color: #888;
+    margin-top: 2px;
+    font-weight: normal;
+}
+
+.payment-list button.active .fee-badge {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode .payment-list button .fee-badge {
+    color: #888;
+}
+
+body.dark-mode .payment-list button.active .fee-badge {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive untuk payment buttons */
+@media (max-width: 768px) {
+    .payment-list {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .payment-list button {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 80px;
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+    
+    .payment-list button .fee-badge {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-list button {
+        flex: 1 1 calc(33.33% - 10px);
+        font-size: 12px;
+        padding: 10px 8px;
+    }
+}
+
+/* ===================== CHECKOUT ===================== */
+
+.checkout {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+    position: relative;
+}
+
+.checkout-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===================== STICKY SUMMARY CARD ===================== */
+
+.checkout-right {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+    height: fit-content;
+}
+
+.summary-card {
+    background: #fff;
+    border: 1px solid #bca898;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+    position: sticky;
+    top: 100px;
+}
+
+/* Efek shadow saat sticky */
+.summary-card.sticky-shadow {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode untuk sticky */
+body.dark-mode .summary-card {
+    background: #2d2d2d;
+    border-color: #404040;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .summary-card.sticky-shadow {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* ===================== CARD ===================== */
+
+.order-card,
+.customer-card,
+.shipping-card,
+.payment-card {
+    background: #fff;
+    border: 1px solid #bca898;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Dark mode untuk cards lainnya */
+body.dark-mode .order-card,
+body.dark-mode .customer-card,
+body.dark-mode .shipping-card,
+body.dark-mode .payment-card {
+    background: #2d2d2d;
+    border-color: #404040;
+}
+
 /* ===================== RESPONSIVE ===================== */
 
 @media (max-width: 900px) {
-
     .checkout {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
-
+    
+    .checkout-right {
+        position: static;
+        top: auto;
+    }
+    
     .summary-card {
         position: static;
+        top: auto;
+        margin-top: 0;
     }
-
-    .payment-list {
-        flex-direction: column;
+    
+    /* Di mobile, summary card akan berada di bawah */
+    .checkout-left {
+        order: 1;
     }
-
-    .product {
-        flex-direction: column;
-    }
-
-    .product-image img {
-        width: 100%;
-    }
-
-}
-
-/* Desktop */
-.card {
-    width: 400px;
-}
-
-/* Laptop */
-@media (max-width:1200px) {
-    .card {
-        width: 350px;
+    
+    .checkout-right {
+        order: 2;
     }
 }
 
 /* Tablet */
-@media (max-width:992px) {
-    .card {
-        width: 300px;
+@media (max-width: 992px) {
+    .checkout-right {
+        top: 80px;
+    }
+    
+    .summary-card {
+        top: 80px;
     }
 }
 
 /* HP */
-@media (max-width:768px) {
-    .card {
-        width: 100%;
+@media (max-width: 768px) {
+    .checkout {
+        width: 95%;
+        margin: 20px auto;
+        gap: 15px;
+    }
+    
+    .checkout-right {
+        position: static;
+    }
+    
+    .summary-card {
+        position: static;
+        padding: 15px;
     }
 }

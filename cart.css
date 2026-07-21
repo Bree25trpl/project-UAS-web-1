@@ -65,43 +65,38 @@
    ADDRESS
 ============================ */
 
-.address-box{
+.address-box {
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     padding: 18px 20px;
-
     border: 1px solid #d5d5d5;
-
     border-radius: 10px;
-
     margin-bottom: 20px;
 }
 
-.address-box button{
-    padding: 8px 20px;
+.address-box > div {
+    flex: 1;
+}
 
-    border: 1px solid #bcbcbc;
-
+.address-box button {
+    padding: 10px 25px;
+    border: none;
     border-radius: 8px;
-
-    background: white;
-
+    background: #7A563E;
+    color: white;
     cursor: pointer;
-
     transition: 0.3s;
-}
-.address-box button:hover{
-    background: #3fdf00;
-    color: white;
+    font-weight: 600;
 }
 
-.address-box button:active{
-    background: #268700;
-    color: white;
+.address-box button:hover {
+    background: #451f00;
+    transform: scale(1.02);
+}
+
+.address-box button:active {
+    background: #5a3f2d;
 }
 
 /* ============================
@@ -278,4 +273,253 @@ input[type="number"]::-webkit-outer-spin-button {
 .checkout-box button:active{
     background: #7A563E;
     color: white;
+}
+
+/* Sticky wrapper untuk checkout box */
+.checkout-wrapper {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: transparent;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* Efek blur/glassmorphism untuk background */
+.checkout-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+    z-index: -1;
+}
+
+/* Dark mode untuk floating wrapper */
+body.dark-mode .checkout-wrapper::before {
+    background: rgba(26, 26, 26, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Checkout box di dalam wrapper */
+.checkout-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 18px 30px;
+    border: 1px solid #d6d6d6;
+    border-radius: 16px;
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect untuk checkout box */
+.checkout-box:hover {
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.16);
+    transform: translateY(-2px);
+}
+
+/* Dark mode untuk checkout box */
+body.dark-mode .checkout-box {
+    background: #2d2d2d;
+    border-color: #404040;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .checkout-box:hover {
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Text di checkout box */
+.checkout-box p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    flex: 1;
+}
+
+body.dark-mode .checkout-box p {
+    color: #b0b0b0;
+}
+
+.checkout-box p strong {
+    font-size: 28px;
+    color: #7A563E;
+}
+
+body.dark-mode .checkout-box p strong {
+    color: #ffb347;
+}
+
+/* Tombol checkout */
+.checkout-box button {
+    padding: 16px 45px;
+    border: none;
+    border-radius: 12px;
+    background: #7A563E;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    min-width: 180px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efek shimmer pada tombol */
+.checkout-box button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.1) 50%,
+        transparent 70%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.checkout-box button:hover::after {
+    transform: translateX(100%);
+}
+
+.checkout-box button:hover {
+    background: #451f00;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(122, 86, 62, 0.4);
+}
+
+.checkout-box button:active {
+    transform: scale(0.96);
+    background: #7A563E;
+}
+
+/* Dark mode untuk tombol */
+body.dark-mode .checkout-box button {
+    background: #7A563E;
+    box-shadow: 0 4px 20px rgba(122, 86, 62, 0.3);
+}
+
+body.dark-mode .checkout-box button:hover {
+    background: #451f00;
+    box-shadow: 0 8px 30px rgba(122, 86, 62, 0.5);
+}
+
+/* Count badge */
+.checkout-box .badge {
+    display: inline-block;
+    background: #7A563E;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+body.dark-mode .checkout-box .badge {
+    background: #ffb347;
+    color: #1a1a1a;
+}
+
+/* ============================
+   RESPONSIVE FLOATING
+============================ */
+
+@media (max-width: 768px) {
+    .checkout-wrapper {
+        padding: 10px 15px;
+    }
+    
+    .checkout-box {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 20px;
+        border-radius: 12px;
+        text-align: center;
+    }
+    
+    .checkout-box p {
+        font-size: 15px;
+        width: 100%;
+    }
+    
+    .checkout-box p strong {
+        font-size: 24px;
+        display: block;
+        margin-top: 5px;
+    }
+    
+    .checkout-box button {
+        padding: 14px 30px;
+        font-size: 16px;
+        min-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-wrapper {
+        padding: 8px 10px;
+    }
+    
+    .checkout-box {
+        padding: 15px 15px;
+        border-radius: 10px;
+    }
+    
+    .checkout-box p {
+        font-size: 14px;
+    }
+    
+    .checkout-box p strong {
+        font-size: 20px;
+    }
+    
+    .checkout-box button {
+        padding: 12px 20px;
+        font-size: 14px;
+        min-width: 100%;
+    }
+}
+
+/* ============================
+   ANIMASI MASUK
+============================ */
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.checkout-wrapper {
+    animation: slideUp 0.5s ease forwards;
 }

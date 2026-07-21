@@ -127,6 +127,10 @@ nav a{
     background-color: rgb(54, 24, 0);
 }
 
+/*ADDRESS-NAV*/
+.header-address .logo h2{
+    color: black;
+}
 /* ============================
    HEADER VARIATIONS
 ============================ */
@@ -204,8 +208,6 @@ body.dark-mode .logo h3 {
 body.dark-mode .logo h3 {
     color: #e0e0e0 !important;
 }
-
-
 
 /* ============================
    BUTTON
