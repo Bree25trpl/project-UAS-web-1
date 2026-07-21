@@ -386,14 +386,14 @@ body.dark-mode .search-bar p {
 
 /* --- Dark Mode Category --- */
 body.dark-mode .category-list .category {
-    background-color: #2d2d2d;
+    background-color: #2d2d2d00;
     border-color: #404040;
     color: #c0c0c0;
 }
 
 body.dark-mode .category-list .category.active {
-    background-color: #404040;
-    color: #e0e0e0;
+    background-color: #40404000;
+    color: #ffb347;
 }
 
 /* --- Dark Mode Store Hero --- */
