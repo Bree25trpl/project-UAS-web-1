@@ -3,22 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cart - Sentra Keramik Purwakarta</title>
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="cart.css" />
   </head>
   <body>
-    <header class="header-cart">
-      <nav class="cart-nav">
+    <header class="detail-header">  <!-- Bisa pakai class yang sama dengan detail produk -->
+      <nav class="detail-nav">
         <div class="logo">
-          <img src="gambar/images-removebg-preview.png" />
+          <img src="gambar/images-removebg-preview.png" alt="Logo" />
           <h2>Sentra Keramik Purwakarta</h2>
           <h2>|</h2>
           <h3>Cart</h3>
         </div>
-
         <ul>
-          <li><a>🛒</a></li>
+          <li><a href="cart.html">🛒</a></li>
           <li><a>👤</a></li>
         </ul>
       </nav>
@@ -27,84 +26,31 @@
     <main class="cart-page">
       <section class="delivery-option">
         <button class="delivery-btn">Delivery</button>
-
         <button class="pickup-btn active">Pick Up</button>
       </section>
 
       <section class="address-box">
         <h4>Tambahkan Alamat</h4>
-
         <button>Add</button>
       </section>
 
-      <p class="all-product">☑ Semua</p>
+      <!-- ganti "all-product" jadi "select-all" sesuai CSS -->
+      <p class="select-all">☑ Semua</p>
 
-      <section class="cart-list">
-        <article class="cart-card">
-          <div class="store-header">
-            <h3>Keramik Mulya Plered</h3>
-
-            <span>Dikirim dalam 3 hari</span>
-          </div>
-
-          <div class="cart-content">
-            <span class="check-icon">☑</span>
-
-            <img src="gambar/aca74648293e2d81636180a760c38c08.jpg" />
-
-            <div class="product-info">
-              <h4>Mangkok Sri Baduga</h4>
-
-              <p>Rp200.000</p>
-
-              <div class="quantity">
-                <button>-</button>
-
-                <input type="number" value="1" min="1" />
-
-                <button>+</button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="cart-card">
-          <div class="store-header">
-            <h3>Keramik Mulya Plered</h3>
-
-            <span>Dikirim dalam 3 hari</span>
-          </div>
-
-          <div class="cart-content">
-            <span class="check-icon">☑</span>
-
-            <img src="gambar/aca74648293e2d81636180a760c38c08.jpg" />
-
-            <div class="product-info">
-              <h4>Mangkok Sri Baduga</h4>
-
-              <p>Rp200.000</p>
-
-              <div class="quantity">
-                <button>-</button>
-
-                <input type="number" value="1" min="1" />
-
-                <button>+</button>
-              </div>
-            </div>
-          </div>
-        </article>
+      <!-- Container item cart, diisi oleh JavaScript -->
+      <section class="cart-list" id="cartContainer">
+        <!-- Dinamis -->
       </section>
 
       <section class="checkout-box">
         <p>
-          Total (1 item):
-          <strong>Rp200.000</strong>
+          Total (<span id="checkedCount">0</span> item):
+          <strong id="totalHargaCart">Rp0</strong>
         </p>
-
-        <button onclick="window.location.href='checkout.html'">Check Out</button>
+        <button id="checkoutBtn">Check Out</button>
       </section>
     </main>
+
+    <script src="Java Script/cart.js"></script>
   </body>
 </html>
