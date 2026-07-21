@@ -184,10 +184,27 @@ nav a{
     color: rgb(0, 0, 0);
 }
 
+.detail-header .logo h3{
+    color: #000000;
+}
+
+body.dark-mode .logo h3 {
+    color: #e0e0e0 !important;
+}
+
 /*CART*/
 .header-cart .logo h2{
     color: rgb(0, 0, 0);
 }
+
+.header-cart .logo h3{
+    color: black;
+}
+
+body.dark-mode .logo h3 {
+    color: #e0e0e0 !important;
+}
+
 
 
 /* ============================
