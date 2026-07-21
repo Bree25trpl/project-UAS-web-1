@@ -36,7 +36,6 @@ url(https://i.pinimg.com/1200x/b8/0a/62/b80a62d63a319925168591a9c3e2cb8e.jpg)
 .featured-card{
     display: flex;
     align-items: center;
-
     gap: 40px;
 }
 
