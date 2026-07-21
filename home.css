@@ -445,3 +445,69 @@
         right: 0px;
     }
 }
+
+.hero-layout {
+    display: flex;
+    align-items: stretch; /* Ubah dari center ke stretch */
+    gap: 40px;
+    padding: 40px 0;
+    width: 100%;
+    min-height: 500px; /* Beri tinggi minimal */
+}
+
+/* Area Teks Kiri - jadi flex container */
+.text-area {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Penting: teks di atas, tombol di bawah */
+    padding: 10px 0;
+}
+
+/* Area konten teks (judul + paragraf) */
+.text-content {
+    flex: 1; /* Mengisi ruang yang tersedia */
+}
+
+/* Kontrol tombol tetap di bawah */
+.timeline-controls {
+    display: flex;
+    gap: 15px;
+    margin-top: auto; /* Dorong ke bawah */
+    padding-top: 20px; /* Beri jarak dari teks */
+    flex-shrink: 0; /* Jangan mengecil */
+}
+
+/* Atau bisa juga pakai posisi absolute jika ingin lebih presisi */
+.text-area.absolute-controls {
+    position: relative;
+    padding-bottom: 70px; /* Ruang untuk tombol */
+}
+
+.text-area.absolute-controls .timeline-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 0;
+}
+
+.dark-toggle-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+
+.dark-toggle-btn:hover {
+    transform: scale(1.2) rotate(20deg);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Di mode gelap */
+body.dark-mode .dark-toggle-btn {
+    color: #ffb347;
+}

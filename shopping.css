@@ -229,7 +229,7 @@ input[type="text"]{
     position: absolute;
     inset: 0;
 
-    background: rgba(0,0,0,.45);
+    background: rgb(46, 43, 43);
 
     color: white;
 
@@ -257,7 +257,7 @@ input[type="text"]{
 .category-list .category{
     text-decoration: none;
 
-    color: black;
+    color: rgb(13, 13, 13);
 
     background: white;
 
@@ -381,6 +381,7 @@ input[type="text"]{
   align-items: center;
   justify-content: center;
   gap: 50px;
+  margin: 0;
   padding: 10px 20px;
   box-sizing: border-box;
   flex-shrink: 0;
@@ -403,13 +404,13 @@ input[type="text"]{
 .featured-info h2 {
   font-size: 26px;
   margin: 0 0 6px 0;
-  color: #222;
+  color: #ffffff;
 }
 
 .featured-info p {
   font-size: 16px;
   margin: 0;
-  color: #555;
+  color: #ffffff;
   line-height: 1.5;
 }
 

@@ -1,0 +1,447 @@
+/* ============================
+   DARK MODE STYLES
+   ============================ */
+
+/* --- Toggle Button --- */
+.dark-toggle-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 5px;
+}
+
+.dark-toggle-btn:hover {
+    transform: scale(1.2) rotate(20deg);
+}
+
+/* --- Dark Mode Body --- */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+/* --- Dark Mode Navbar --- */
+body.dark-mode nav {
+    background-color: #2d2d2d !important;
+}
+
+body.dark-mode nav:hover {
+    background-color: #2d2d2d !important;
+}
+
+body.dark-mode .logo h2 {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode nav ul li a {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #ffb347 !important;
+}
+
+body.dark-mode .nav-a-rekomendasi {
+    background-color: #6d4c3d !important;
+    color: white !important;
+}
+
+body.dark-mode .nav-a-rekomendasi:hover {
+    background-color: #8a5e4a !important;
+}
+
+/* --- Dark Mode Hero --- */
+body.dark-mode .hero h1,
+body.dark-mode .hero-text {
+    color: #ffffff;
+}
+
+/* --- Dark Mode Timeline --- */
+body.dark-mode .timeline {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .timeline h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .timeline-text h3 {
+    color: #ffb347;
+}
+
+body.dark-mode .timeline-text p {
+    color: #c0c0c0;
+}
+
+body.dark-mode .section-title-center h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .section-title-center .eyebrow {
+    color: #ffb347;
+}
+
+/* --- Dark Mode UMKM --- */
+body.dark-mode .umkm {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .umkm h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .umkm-card {
+    background-color: #2d2d2d;
+    border: 1px solid #404040;
+}
+
+body.dark-mode .umkm-card h3 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .umkm-card .description {
+    color: #b0b0b0;
+}
+
+body.dark-mode .umkm-card .category {
+    color: #aaaaaa;
+}
+
+/* --- Dark Mode Store / Shopping --- */
+body.dark-mode .store-card {
+    background-color: #2d2d2d;
+    border-color: #404040;
+}
+
+body.dark-mode .store-info h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .store-info .description {
+    color: #b0b0b0;
+}
+
+body.dark-mode .store-title {
+    background-color: #4a3729;
+}
+
+body.dark-mode .featured {
+    background-color: #2d2d2d !important;
+}
+
+body.dark-mode .featured-info h2,
+body.dark-mode .featured-info p {
+    color: #e0e0e0 !important;
+}
+
+/* --- Dark Mode Product Detail --- */
+body.dark-mode .detail-header {
+    background-color: #2d2d2d;
+}
+
+body.dark-mode .product-info h1 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .product-info .price {
+    color: #ffb347;
+}
+
+body.dark-mode .purchase-box {
+    border-color: #404040;
+    background-color: #2d2d2d;
+}
+
+body.dark-mode .purchase-box h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .quantity button {
+    background-color: #404040;
+    color: #e0e0e0;
+}
+
+body.dark-mode .quantity button:hover {
+    background-color: #555555;
+}
+
+body.dark-mode input[type="number"] {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+body.dark-mode .button-group button:first-child {
+    background-color: #2d2d2d;
+    border-color: #ffb347;
+    color: #ffb347;
+}
+
+body.dark-mode .button-group button:first-child:hover {
+    background-color: #ffb347;
+    color: #1a1a1a;
+}
+
+body.dark-mode .button-group button:last-child {
+    background-color: #6d4c3d;
+}
+
+body.dark-mode .button-group button:last-child:hover {
+    background-color: #8a5e4a;
+}
+
+body.dark-mode .product-specification table th {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+body.dark-mode .product-specification table td {
+    color: #c0c0c0;
+}
+
+body.dark-mode .product-specification table th,
+body.dark-mode .product-specification table td {
+    border-bottom-color: #404040;
+}
+
+/* --- Dark Mode Checkout --- */
+body.dark-mode .order-card,
+body.dark-mode .customer-card,
+body.dark-mode .shipping-card,
+body.dark-mode .payment-card,
+body.dark-mode .summary-card {
+    background-color: #2d2d2d;
+    border-color: #404040;
+}
+
+body.dark-mode .card-title h3,
+body.dark-mode .customer-card h3,
+body.dark-mode .shipping-card h3,
+body.dark-mode .payment-card h3,
+body.dark-mode .summary-card h3 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .card-title p {
+    color: #aaaaaa;
+}
+
+body.dark-mode .product-info h4 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .product-info p {
+    color: #aaaaaa;
+}
+
+body.dark-mode .order-total {
+    border-top-color: #404040;
+}
+
+body.dark-mode .order-total strong {
+    color: #e0e0e0;
+}
+
+body.dark-mode .customer-info h4 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .customer-info p {
+    color: #b0b0b0;
+}
+
+body.dark-mode .shipping-card label {
+    color: #c0c0c0;
+}
+
+body.dark-mode .payment-list button {
+    background-color: #2d2d2d;
+    border-color: #404040;
+    color: #e0e0e0;
+}
+
+body.dark-mode .payment-list button:hover {
+    background-color: #6d4c3d;
+    color: white;
+}
+
+body.dark-mode .payment-list button.active {
+    background-color: #6d4c3d;
+    color: white;
+}
+
+body.dark-mode .summary-row {
+    color: #c0c0c0;
+}
+
+body.dark-mode .summary-total {
+    color: #e0e0e0;
+}
+
+body.dark-mode .summary-card hr {
+    border-top-color: #404040;
+}
+
+body.dark-mode .btn-bayar {
+    background-color: #6d4c3d;
+}
+
+body.dark-mode .btn-bayar:hover {
+    background-color: #8a5e4a;
+}
+
+/* --- Dark Mode Footer --- */
+body.dark-mode footer {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .footer-brand h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .footer-brand p {
+    color: #aaaaaa;
+}
+
+body.dark-mode .footer-links h3,
+body.dark-mode .footer-contact h3 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .footer-links a {
+    color: #aaaaaa;
+}
+
+body.dark-mode .footer-links a:hover {
+    color: #ffb347;
+}
+
+body.dark-mode .footer-contact p {
+    color: #aaaaaa;
+}
+
+body.dark-mode .footer-bottom p {
+    color: #888888;
+}
+
+/* --- Dark Mode Map --- */
+body.dark-mode .peta-wrapper {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Dark Mode Scrollbar --- */
+body.dark-mode ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background: #555555;
+    border-radius: 4px;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: #777777;
+}
+
+/* --- Dark Mode Form Elements --- */
+body.dark-mode input[type="text"],
+body.dark-mode input[type="number"],
+body.dark-mode input[type="email"],
+body.dark-mode textarea,
+body.dark-mode select {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #404040;
+}
+
+body.dark-mode input[type="text"]::placeholder,
+body.dark-mode input[type="number"]::placeholder {
+    color: #888888;
+}
+
+/* --- Dark Mode Search Bar --- */
+body.dark-mode .search-bar {
+    background-color: #2d2d2d;
+    border-color: #404040;
+}
+
+body.dark-mode .search-bar input {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+body.dark-mode .search-bar input::placeholder {
+    color: #888888;
+}
+
+body.dark-mode .search-bar p {
+    color: #888888;
+}
+
+/* --- Dark Mode Category --- */
+body.dark-mode .category-list .category {
+    background-color: #2d2d2d;
+    border-color: #404040;
+    color: #c0c0c0;
+}
+
+body.dark-mode .category-list .category.active {
+    background-color: #404040;
+    color: #e0e0e0;
+}
+
+/* --- Dark Mode Store Hero --- */
+body.dark-mode .shop-hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .shop-hero .overlay h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .shop-hero .overlay p {
+    color: #e0e0e0;
+}
+
+/* --- Dark Mode Product Card --- */
+body.dark-mode .product-card {
+    background-color: #2d2d2d;
+}
+
+body.dark-mode .product-card h4 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .product-card p {
+    color: #ffb347;
+}
+
+body.dark-mode .product-card a {
+    color: #e0e0e0;
+}
+
+.dark-toggle-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+
+.dark-toggle-btn:hover {
+    transform: scale(1.2) rotate(20deg);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Di mode gelap */
+body.dark-mode .dark-toggle-btn {
+    color: #ffb347;
+}
