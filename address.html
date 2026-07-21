@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentra Keramik Plered - Alamat Pengiriman</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="address.css" />
+  </head>
+
+  <body>
+    <header class="header-address">
+      <nav class="shopping-nav glass">
+        <div class="logo">
+          <img src="gambar/images-removebg-preview.png" alt="Logo" />
+          <h2 style="color: white">Sentra Keramik Plered</h2>
+        </div>
+        <ul>
+          <li><a href="home.html" style="color: white">Home</a></li>
+          <li><a href="shoppingpage.html" style="color: white">Shopping</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="address-section">
+        <div class="address-card">
+          <h2>Alamat Pengiriman</h2>
+          <p class="subtitle">
+            Lengkapi detail alamat untuk pengiriman pesanan Anda.
+          </p>
+
+          <form id="addressForm" action="checkout.html">
+            <div class="form-group" id="group-name">
+              <label for="name">Nama Lengkap</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Masukkan nama lengkap Anda"
+              />
+              <span class="error-message">Nama lengkap harus diisi.</span>
+            </div>
+
+            <div class="form-group" id="group-phone">
+              <label for="phone">Nomor Telepon</label>
+              <input type="text" id="phone" placeholder="Contoh: 08123456789" />
+              <span class="error-message"
+                >Nomor telepon harus diisi dengan angka (min. 10 digit).</span
+              >
+            </div>
+
+            <div class="form-group" id="group-address">
+              <label for="address">Alamat Lengkap</label>
+              <textarea
+                id="address"
+                placeholder="Nama jalan, gedung, no. rumah, dsb."
+              ></textarea>
+              <span class="error-message">Alamat lengkap harus diisi.</span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group" id="group-city">
+                <label for="city">Kota/Kabupaten</label>
+                <input type="text" id="city" placeholder="Masukkan kota" />
+                <span class="error-message">Kota harus diisi.</span>
+              </div>
+
+              <div class="form-group" id="group-zip">
+                <label for="zip">Kode Pos</label>
+                <input type="text" id="zip" placeholder="Kode Pos" />
+                <span class="error-message">Kode pos harus berupa angka.</span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              Simpan & Lanjutkan ke Pembayaran
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div
+        class="footer-container"
+        style="
+          max-width: 1300px;
+          margin: auto;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 40px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          padding-bottom: 40px;
+          background-color: var(--color-charcoal);
+          color: white;
+          padding: 60px 20px 20px;
+        "
+      >
+        <div class="footer-brand" style="flex: 1; min-width: 250px">
+          <h2 style="color: white; font-size: 28px; margin-bottom: 20px">
+            Sentra Keramik Plered
+          </h2>
+          <p style="color: #a3a3a3; line-height: 1.8">
+            Melestarikan tradisi, menghadirkan mahakarya keramik khas Nusantara
+            untuk memperindah setiap sudut kehidupan Anda.
+          </p>
+        </div>
+        <div
+          class="footer-bottom"
+          style="
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #737373;
+            font-size: 14px;
+          "
+        >
+          <p>&copy; 2024 Sentra Keramik Plered. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="Java Script/js-address.js"></script>
+  </body>
+</html>

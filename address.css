@@ -1,0 +1,143 @@
+/* ============================
+   ADDRESS PAGE HEADER
+============================ */
+.header-address {
+    background-color: var(--color-charcoal);
+    position: relative;
+    z-index: 100;
+}
+
+/* ============================
+   ADDRESS FORM SECTION
+============================ */
+.address-section {
+    padding: 80px 20px;
+    background-color: var(--color-cream);
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-card {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.address-card h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--color-charcoal);
+    text-align: center;
+}
+
+.address-card p.subtitle {
+    text-align: center;
+    color: var(--color-text-body);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--color-brown-dark);
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    background-color: #f9fafb;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--color-charcoal);
+    transition: var(--transition);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-terracotta);
+    box-shadow: 0 0 0 4px rgba(181, 91, 53, 0.1);
+    background-color: white;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* Error States */
+.form-group.error input,
+.form-group.error textarea {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 14px;
+    margin-top: 6px;
+    display: none;
+}
+
+.form-group.error .error-message {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--color-terracotta);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(181, 91, 53, 0.4);
+    transition: var(--transition);
+}
+
+.btn-submit:hover {
+    background-color: var(--color-terracotta-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(181, 91, 53, 0.5);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .address-card {
+        padding: 30px 20px;
+    }
+}
