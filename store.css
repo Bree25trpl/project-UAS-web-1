@@ -364,18 +364,14 @@ body.dark-mode .product-card:hover::after {
     border-color: #ffb347;
 }
 
-/* ===========================
-   PRODUCT RESPONSIVE
-=========================== */
 
-/* Desktop */
+
 .product-list{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 25px;
 }
 
-/* Laptop */
 @media (max-width: 1200px){
 
     .product-list{
@@ -383,7 +379,6 @@ body.dark-mode .product-card:hover::after {
     }
 }
 
-/* Tablet */
 @media (max-width: 992px){
 
     .product-list{
@@ -396,7 +391,6 @@ body.dark-mode .product-card:hover::after {
     }
 }
 
-/* HP */
 @media (max-width: 768px){
 
     .product-list{
@@ -421,7 +415,6 @@ body.dark-mode .product-card:hover::after {
     }
 }
 
-/* HP kecil */
 @media (max-width: 480px){
 
     .product-list{

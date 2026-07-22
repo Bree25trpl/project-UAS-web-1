@@ -512,11 +512,6 @@ body.dark-mode .dark-toggle-btn {
     color: #ffb347;
 }
 
-/* ==========================
-   RESPONSIVE TIMELINE
-========================== */
-
-/* Tablet */
 @media (max-width: 992px) {
 
     .timeline-content{
@@ -537,7 +532,6 @@ body.dark-mode .dark-toggle-btn {
     }
 }
 
-/* HP */
 @media (max-width: 768px){
 
     .timeline-content{
@@ -571,7 +565,6 @@ body.dark-mode .dark-toggle-btn {
     }
 }
 
-/* HP kecil */
 @media (max-width: 480px){
 
     .timeline h2{

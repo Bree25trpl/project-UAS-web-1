@@ -320,7 +320,6 @@ footer {
     font-size: 14px;
 }
 
-/* Tablet */
 @media (max-width: 992px) {
 
     .nav-a-rekomendasi{
@@ -341,7 +340,6 @@ footer {
     }
 }
 
-/* HP */
 @media (max-width: 768px){
 
     nav{
