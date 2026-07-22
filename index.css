@@ -532,37 +532,33 @@ body.dark-mode .dark-toggle-btn {
     }
 }
 
-@media (max-width: 768px){
+@media (max-width:768px){
+
+    .hero{
+        padding:0 20px;
+        text-align:center;
+        align-items:center;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero-text{
+        width:100%;
+        font-size:16px;
+    }
+
+    .timeline{
+        padding:60px 20px;
+    }
 
     .timeline-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        min-width:100%;
+        width:100%;
+        flex-direction:column;
     }
 
-    .timeline-text{
-        width: 100%;
-        text-align: center; /* ganti left kalau ingin rata kiri */
-    }
-
-    .timeline-text h3{
-        width: 100%;
-        font-size: 22px;
-        margin-bottom: 12px;
-    }
-
-    .timeline-text p{
-        width: 100%;
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
-    .timeline-image img{
-        width: 100%;
-        max-width: 320px;
-        height: auto;
-    }
 }
 
 @media (max-width: 480px){
